@@ -32,7 +32,7 @@ module FCS_MPC_tb;
 	wire mprj_io_0;
 	
         assign mprj_io[16:9] = iL;
-        assign mprj_io[7:0] = vc;
+        assign mprj_io[32:25] = vc;
         assign mprj_io[24:17] = vg;
 	assign mprj_io_0 = mprj_io[8];
 	// assign mprj_io_0 = {mprj_io[8:4],mprj_io[2:0]};
