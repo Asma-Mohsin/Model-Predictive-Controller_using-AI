@@ -92,7 +92,7 @@ FCS_MPC FCS_MPC (
 
     .iL (io_in[16:9]),
      .vg (io_in[24:17]),
-      .vc (io_in[7:0]),
+      .vc (io_in[32:25]),
     .u(io_out[8]),
     .io_oeb(io_oeb[8])
 
