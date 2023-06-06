@@ -10,12 +10,13 @@ inout vssd1,
   input wire [7:0] vc,
   input wire [7:0] vg,
   output reg u,
-  output wire io_oeb
+  output wire [24:0]io_oeb
 );
 
   reg [39:0] temp;  // Adjusted bit width for temp variable
 
-assign io_oeb=1'b0;
+assign io_oeb[0]=1'b0;
+assign io_oeb[24:1]=24'b111111111111111111111111;
 
 `ifdef COCOTB_SIM
      initial begin

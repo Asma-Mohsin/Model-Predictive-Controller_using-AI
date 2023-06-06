@@ -94,11 +94,11 @@ FCS_MPC FCS_MPC (
      .vg (io_in[24:17]),
       .vc (io_in[32:25]),
     .u(io_out[8]),
-    .io_oeb(io_oeb[8])
+    .io_oeb(io_oeb[32:8])
 
     
 );
 
 endmodule	// user_project_wrapper
 
-`default_nettype wire
+`default_nettype none
